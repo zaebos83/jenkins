@@ -5,7 +5,7 @@ pipeline {
 			args '-p 3000:3000'
 		}
 	}
-	environment{
+	environment {
 		CI = 'true'
 	}
 	stages {
@@ -14,8 +14,8 @@ pipeline {
 				sh 'npm install'
 			}
 		}
-		stage('Test'){
-			step{
+		stage('Test') {
+			steps {
 				sh 'npm test'
 			}
 		}
