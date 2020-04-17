@@ -13,11 +13,6 @@ pipeline {
 				sh 'npm install'
 			}
 		}
-		stage('Test') {
-			steps {
-				sh 'npm test'
-			}
-		}
 		stage('Deliver') {
 			steps {
 				input message: 'Pret a delivrer l application ?'
