@@ -42,13 +42,5 @@ pipeline {
 				}
 			}
 		}
-		stage('Deploiement Ansible') {
-			steps {
-				ansiblePlaybook (
-					playbook: 'playbook.yml'
-				)
-			}
-		}
-
 	}
 }
